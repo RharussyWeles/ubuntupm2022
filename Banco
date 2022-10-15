@@ -1,0 +1,84 @@
+package entities;
+
+public class Conta {
+	/*
+	 *  - inteiro: Número
+	    - cadeia:Cpf
+	    - real: saldo
+	    - logico:ativo
+	 */
+	
+	//Atributos.
+	private int numero;
+	private string cpf;
+	private double saldo;
+	private boolean ativo; 
+	
+	//Construtor.
+	
+	public conta(int numero, string cpf) {
+		super();
+		this.numero=numero;
+		this.cpf = cpf;
+		this.saldo = saldo;
+		this.ativo = ativo;
+		
+		//Encapsulamento - Protecão 
+		
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public string getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(string cpf) {
+		this.cpf = cpf;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public boolean isAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+	
+	//Metodos
+	
+	public void credito(double valor) {
+		this.saldo =saldo+valor;	
+	}
+	
+	public void debito(double valor) {
+		if(valor<0) {
+			System.out.println("Valor digitado negativo!!!.");
+			
+			
+		}
+		
+		
+	else if(valor> this.saldo) {
+			System.out.println("Saldo indisponível.");
+			
+		}else
+		this.saldo=saldo-valor;
+	}
+	
+
+}
