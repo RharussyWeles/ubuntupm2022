@@ -1,0 +1,30 @@
+package app;
+
+import entities.Conta;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner(System.in);
+		Conta c1 = new conta(1);
+		Conta c2 = new conta(2, "000.111.222-33");
+		double auxValor = 0;
+		
+		c1.credito(100.50);
+		System.out.println("Digite o valor de credito na conta: ");
+		auxValor = leia,nextDouble();
+		C1.CREDITO(auxValor)
+		System.out.println("conta: "c1.getNumero()+"Saldo R$ "+ );
+		c1.setNumero(5000);
+		System.out.println("Digite o valor de debito na conta: ");
+		auxValor = leia,nextDouble();
+		c1.debito(auxValor);
+		System.out.println("Novo valor: ");
+		c1.setSaldo(1000000.00);
+		System.out.println("conta: "c1.getNumero()+"Saldo R$ "+);
+
+	}
+
+}
